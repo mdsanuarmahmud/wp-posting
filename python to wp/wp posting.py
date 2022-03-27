@@ -10,7 +10,7 @@ token = base64.standard_b64encode((user + ':' + pythonapp).encode('utf-8'))  # w
 headers = {'Authorization': 'Basic ' + token.decode('utf-8')}
 
 
-    post = {'title': 'Wordpress Title ',
+post = {'title': 'Wordpress Title ',
            'slug': 'slug',
            'status': 'draft',
            'content':'This is my content',
